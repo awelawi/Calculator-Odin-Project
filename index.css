@@ -1,0 +1,75 @@
+html,body {
+    margin: 0px;
+    height: calc(100%);
+    width: calc(100%);
+}
+
+
+#parent-container{
+    width: calc(100% - 100px);
+    height: calc(100% - 300px);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: #f08080;
+    border-radius: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: center;
+}
+
+#display{
+    width: calc(100% - 60px);
+    height: 90px;
+}
+#command-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: calc(20%);
+    height: calc(60%);
+    justify-content: center;
+    align-items: center;
+}
+.command-buttons{
+    font-weight: bold;
+}
+
+.operators-and-numbers-buttons{
+    width: calc(80%);
+    height: calc(150%);
+}
+#row-1{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: calc(10px + 20%);
+    justify-content: center;
+    align-items: center;
+}
+
+#row-2{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: calc(10px + 20%);
+    justify-content: center;
+    align-items: center;
+}
+
+#row-3 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: calc(10px + 20%);
+    justify-content: center;
+    align-items: center;
+}
+
+#row-4 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: calc(10px + 20%);
+    justify-content: center;
+    align-items: center;
+}
