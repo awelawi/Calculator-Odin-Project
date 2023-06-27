@@ -7,42 +7,42 @@
     <link rel = "stylesheet" href="index.css">
 </head>
 <body>
-    <script src = "index.js"></script>
     <div id = "parent-container">
-        <div id = "display">
+        <div id = "display-container">
             <textarea id = "display" placeholder="You will see your input here">
             </textarea>
         </div>
         <div id = "command-buttons">
-            <div id = "clear"><button class = "command-buttons">Clear</button></div>
-            <div id = "delete"><button class = "command-buttons">Delete</button></div>
+            <button id = "clear" class = "command-buttons">Clear</button>
+            <button id = "delete" class = "command-buttons">Delete</button>
         </div>
-        <div id = "operators-and-numbers-buttons">
-            <div id = "row-1">
-                <div><button id = "the-one" class = "operators-and-numbers-buttons">1</button></div>
-                <div><button id = "the-two" class = "operators-and-numbers-buttons">2</button></div>
-                <div><button id = "the-three" class = "operators-and-numbers-buttons">3</button></div>
-                <div><button id="the-star" class = "operators-and-numbers-buttons">*</button></div>
-            </div>
-            <div id = "row-2">
-                <div><button id="the-four" class = "operators-and-numbers-buttons">4</button></div>
-                <div><button id="the-five" class = "operators-and-numbers-buttons">5</button></div>
-                <div><button id="the-six" class = "operators-and-numbers-buttons">6</button></div>
-                <div><button id="the-divide" class = "operators-and-numbers-buttons">/</button></div>
-            </div>
-            <div id = "row-3">
-                <div><button id="the-seven" class = "operators-and-numbers-buttons">7</button></div>
-                <div><button id="the-eight" class = "operators-and-numbers-buttons">8</button></div>
-                <div><button id="the-nine" class = "operators-and-numbers-buttons">9</button></div>
-                <div><button id="the-minus" class = "operators-and-numbers-buttons">-</button></div>
-            </div>
-            <div id = "row-4">
-                <div><button id="the-zero" class = "operators-and-numbers-buttons">0</button></div>
-                <div><button id = "the-dot" class = "operators-and-numbers-buttons">.</button></div>
-                <div><button id="the-equals" class = "operators-and-numbers-buttons">=</button></div>
-                <div><button id="the-plus" class = "operators-and-numbers-buttons">+</button></div>
-            </div>  
+        <!-- <div id = "operators-and-numbers-buttons"> -->
+        <div id = "row-1">
+                <button id = "the-one" class = "number-buttons">1</button>
+                <button id = "the-two" class = "number-buttons">2</button>
+                <button id = "the-three" class = "number-buttons">3</button>
+                <button id="the-star" class = "operators-buttons">*</button>
         </div>
+        <div id = "row-2">
+                <button id="the-four" class = "number-buttons">4</button>
+                <button id="the-five" class = "number-buttons">5</button>
+                <button id="the-six" class = "number-buttons">6</button>
+                <button id="the-divide" class = "operators-buttons">/</button>
+        </div>
+        <div id = "row-3">
+                <button id="the-seven" class = "number-buttons">7</button>
+                <button id="the-eight" class = "number-buttons">8</button>
+                <button id="the-nine" class = "number-buttons">9</button>
+                <button id="the-minus" class = "operators-buttons">-</button>
+        </div>
+        <div id = "row-4">
+                <button id="the-zero" class = "number-buttons">0</button>
+                <button id = "the-dot" class = "number-buttons">.</button>
+                <button id="the-equals" class = "number-buttons">=</button>
+                <button id="the-plus" class = "operators-buttons">+</button>
+        </div>  
+        <!-- </div> -->
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

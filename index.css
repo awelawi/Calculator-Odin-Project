@@ -1,75 +1,137 @@
-html,body {
-    margin: 0px;
-    height: calc(100%);
+html,body{
     width: calc(100%);
-}
-
-
-#parent-container{
-    width: calc(100% - 100px);
-    height: calc(100% - 300px);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    background-color: #f08080;
-    border-radius: 10px;
-    margin-left: 2em;
-    margin-right: 2em;
+    height: calc(100%);
+    margin: 0px;
+    align-items: center;
     justify-content: center;
 }
 
-#display{
-    width: calc(100% - 60px);
-    height: 90px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#parent-container {
+    width: calc(100% - 600px);
+    height: calc(100% - 200px);
+    background-color: #ea526f;
+    border-radius: 10px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+#display-container{
+    width: calc(100%);
+    height: calc(100%);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#display-container #display{
+    width: calc(100% - 20px);
+    height: calc(100%);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #ffb3c6;
+}
+
 #command-buttons{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    width: calc(20%);
-    height: calc(60%);
-    justify-content: center;
+    width: calc(100%);
+    height: calc(100%);
     align-items: center;
-}
-.command-buttons{
-    font-weight: bold;
+    justify-content: center;
+    font-weight: bolder;
+    
 }
 
-.operators-and-numbers-buttons{
-    width: calc(80%);
-    height: calc(150%);
+#command-buttons #clear{
+    width: calc(50%);
+    height: calc(50%);
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #ffc2d1;
 }
+
+#command-buttons #delete{
+    width: calc(50%);
+    height: calc(50%);
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #fb6f92;
+}
+
 #row-1{
     display: flex;
-    margin-top: 10px;
     flex-direction: row;
-    margin-left: calc(10px + 20%);
-    justify-content: center;
-    align-items: center;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 5px;
 }
 
+#row-1 button{
+    background-color: #f4978e;
+}
 #row-2{
     display: flex;
-    margin-top: 10px;
     flex-direction: row;
-    margin-left: calc(10px + 20%);
-    justify-content: center;
-    align-items: center;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 5px;
 }
 
-#row-3 {
+#row-2 button{
+    background-color: #f8ad9d;
+}
+#row-3{
     display: flex;
-    margin-top: 10px;
     flex-direction: row;
-    margin-left: calc(10px + 20%);
-    justify-content: center;
-    align-items: center;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 5px;
 }
 
-#row-4 {
+#row-3 button{
+    background-color: #fbc4ab;
+}
+#row-4{
     display: flex;
-    margin-top: 10px;
     flex-direction: row;
-    margin-left: calc(10px + 20%);
-    justify-content: center;
-    align-items: center;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 5px;
+    
+}
+#row-4 button{
+    background-color: #ffdab9;
+}
+.operators-buttons{
+    width: calc(25%);
+    height: calc(100% - 10px);
+    margin-right: calc(0.5%);
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.number-buttons{
+    width: calc(25%);
+    height: calc(100% - 10px);
+    margin-right: calc(0.5%);
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 25px;
 }
