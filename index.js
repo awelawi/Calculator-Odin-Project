@@ -18,13 +18,11 @@ let zero_btn = document.querySelector("#the-zero");
 let dot_btn = document.querySelector("#the-dot");
 let equals_btn = document.querySelector("#the-equals");
 let divide_btn = document.querySelector("#the-divide");
-console.log(divide_btn);
 console.log(display);
 
 let display_value = "";
 const numbers_btns = document.querySelectorAll(".number-buttons");
 const operator_btns = document.querySelectorAll(".operators-buttons");
-console.log(numbers_btns);
 let operator_and_number = {
     num_1: 0,
     num_2: 0,
@@ -33,27 +31,25 @@ let operator_and_number = {
 
 numbers_btns.forEach(button => {
     button.addEventListener("click", () => {
-        if(isDisplay()){
+        if(true){
             operator_and_number.num_1 = button.textContent;
-            console.log(typeof(operator_and_number.num_1));
         }
         else{
             operator_and_number.num_2 = button.textContent;
         }
         display_value = button.textContent;
+        console.log(typeof(display_value))
         display.innerHTML += `${display_value}`;
     })
 });
 
 operator_btns.forEach(button => {
     button.addEventListener("click", () => {
-        console.log("button")
         display_value = button.textContent
         display.innerHTML += display_value
     })
 });
 
-console.log(operator_and_number);
 
 /**
  * Checks whether the textarea is empty or not
@@ -61,11 +57,18 @@ console.log(operator_and_number);
  * num_1 or num_2
  */
 function isDisplay(){
-    if (display.value.trim() === ""){
+    //use pattern match to determine whether an operation is on the display
+    const regex = /\+\*=-\//i;
+    console.log(regex)
+    console.log(regex.test(display))
+    if (regex.test(display) == true){
+        console.log("the operator btn has been clicked");
         return true;
     }
     return false;
 }
+
+isDisplay();
 
 function receiveInput(){
 
