@@ -39,6 +39,8 @@ body {
     border-radius: 10px;
     margin: 10px;
     background-color: #ffb3c6;
+    box-shadow: none;
+    font-size: 45px;
 }
 
 #command-buttons{
@@ -128,6 +130,15 @@ body {
 }
 
 .number-buttons{
+    width: calc(25%);
+    height: calc(100% - 10px);
+    margin-right: calc(0.5%);
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.equalizer{
     width: calc(25%);
     height: calc(100% - 10px);
     margin-right: calc(0.5%);
